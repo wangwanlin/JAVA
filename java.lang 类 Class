@@ -1,0 +1,7 @@
+class类的实例表示 Java 应用运行时的类或接口。在 Java 中，每个 class 都有一个相应的 Class 对象，即每一个类，在生成的.class文件中，
+就会产生一个 Class 对象，用于表示这个类的类型信息。我们获取 Class 实例有三种方法：
+1.利用对象调用 getClass()方法获取该对象的 Class 实例
+
+2.使用 Class 类的静态方法 forName(String className)，用类的名字获取一个 Class 实例
+
+3.运用.class的方式来获取 Class 实例，对于基本数据类型的封装类，还可以采用.TYPE来获取相对应的基本数据类型的 Class 实例
