@@ -1,0 +1,3 @@
+n brief, Observer Pattern = publisher + subscriber.
+ 举个简单的例子就是各种 listener，比如当你有一个按键，你肯定要给这个按键添加监听事件 （listener）来完成指定动作吧，这就是一种应用。
+ Listener 就是 subscriber.
