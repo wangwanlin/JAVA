@@ -1,0 +1,10 @@
+适用场景与优缺点：
+在以下情况下应当使用装饰模式：
+1.需要扩展一个类的功能，或给一个类增加附加责任。 
+2.需要动态地给一个对象增加功能，这些功能可以再动态地撤销。 
+3.需要增加由一些基本功能的排列组合而产生的非常大量的功能，从而使继承关系变得不现实。
+
+当你需要动态地给一个对象添加功能，实现功能扩展的时候，就可以使用装饰者模式。
+Java IO 类中有一个经典的装饰者模式应用， BufferedReader 装饰了 InputStreamReader.
+
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
