@@ -1,0 +1,14 @@
+smtp.qq.com  这个QQ服务器比较奇葩，还要 建立安全连接 
+private void init(String name, String pass, String smtpHostName) throws GeneralSecurityException{
+		//开启ssl加密，如果没有ssl加密，会报530错误
+		MailSSLSocketFactory sf = new MailSSLSocketFactory();
+		sf.setTrustAllHosts(true);
+		prop.put("mail.smtp.ssl.enable", "true");
+		prop.put("mail.smtp.ssl.socketFactory", sf);
+		
+		
+		prop.setProperty("mail.smtp.auth", "true");
+		prop.setProperty("mail.smtp.host", smtpHostName);
+		authticator = new MailAuthticator(name, pass);
+		session = Session.getInstance(prop, authticator);
+	}
